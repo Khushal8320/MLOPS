@@ -1,0 +1,40 @@
+artifact_path: mlflow-artifacts:/4/models/m-379e8ca8e13f4bc9a4128f8d3b25086b/artifacts
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.11.15
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.8.0
+    skops_trusted_types: null
+is_signature_from_type_hint: false
+mlflow_version: 3.10.1
+model_id: m-379e8ca8e13f4bc9a4128f8d3b25086b
+model_size_bytes: 4659948
+model_uuid: m-379e8ca8e13f4bc9a4128f8d3b25086b
+prompts: null
+run_id: 5b223853121f400d9a3e53fa2ab40677
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "string", "name": "Chief_complain_clean", "required": true},
+    {"type": "double", "name": "SBP", "required": true}, {"type": "double", "name":
+    "DBP", "required": true}, {"type": "double", "name": "HR", "required": true},
+    {"type": "double", "name": "RR", "required": true}, {"type": "double", "name":
+    "BT", "required": true}, {"type": "double", "name": "NRS_pain", "required": true},
+    {"type": "long", "name": "Age", "required": true}, {"type": "long", "name": "Sex",
+    "required": true}, {"type": "long", "name": "KTAS_RN", "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "int64", "shape": [-1]}}]'
+  params: null
+type_hint_from_example: false
+utc_time_created: '2026-04-01 18:36:23.307072'
